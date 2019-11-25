@@ -9,6 +9,7 @@ RSpec.describe Hello, "#greetings" do
 
     it "can tell you your secrets?" do
       puts "#{ENV['SCM_USERNAME']}"
+      puts "#{ENV['SCM_USERNAME']}"
     end
   end
 end
