@@ -37,4 +37,12 @@ jobs:
       # The next step is "rake". It runs the default rake task defined in your
       # Rakefile
       - rake: bundle exec rake
+    
+  flctl:
+    image: gcr.corp.zlab.co.jp/zlab-team-zap/fleet:latest
+    requires:
+      - main
+
+    steps:
+      - sleep 3200
 
